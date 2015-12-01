@@ -49,11 +49,11 @@ def myCallBack(controlId, value):
 	if(controlId == 12):
 		# back 
 		setGOB(1, 1, 0)
-	if(controlId == 11):
-		print "Stop"
-		setGOB(0, 0, 0)
-		xboxCont.stop()
-		sys.exit("FIN")
+	# if(controlId == 11):
+	#	print "Stop"
+	#	setGOB(0, 0, 0)
+	#	xboxCont.stop()
+	#	sys.exit("FIN")
 
 xboxCont = XboxController.XboxController(
     controllerCallBack = myCallBack)
