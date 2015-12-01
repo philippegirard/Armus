@@ -43,6 +43,12 @@ def myCallBack(controlId, value):
 	if(controlId == 2 and value > -1 * threshold and value < threshold):
 		# neutre joystick droit
 		setGOB(1, 1, 1) 
+	if(controlId == 13):
+		# start
+		setGOB(1, 0, 1)
+	if(controlId == 12):
+		# back 
+		setGOB(1, 1, 0)
 	if(controlId == 11):
 		print "Stop"
 		setGOB(0, 0, 0)
